@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f8f8f5"><meta name="description" content="林子文的设计作品集。探索展示与交互、App、网页、空间计算、交互装置与综合设计。">
+<title>林子文 · Design Portfolio</title>
+<link rel="icon" href="favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+<script defer src="catalog.js"></script><script defer src="site.js"></script><script defer src="orbit.js"></script>
+</head>
+<body>
+<a class="skip" href="#works">跳至作品索引</a>
+<header class="mast">
+<div class="brand"><a href="#home" aria-label="林子文作品集首页"><i class="fold" aria-hidden="true"></i>Ziwen Lin</a><button id="menuButton" aria-label="打开导航" aria-expanded="false" aria-controls="menu"><i class="menu-bars"></i></button></div>
+<nav id="menu" hidden aria-label="快速导航"></nav>
+<nav class="head-links" aria-label="主导航"><a class="about-link" href="#about">关于我</a><a class="work-link" href="#works">作品索引 <i class="grid-icon" aria-hidden="true"></i></a></nav>
+</header>
+<main id="homePage">
+<section class="hero" aria-labelledby="cover-title">
+<div class="drift-stage" id="gallery" role="region" aria-label="漂浮作品画廊">
+  <div class="drift-heading"><h1 id="cover-title" lang="en">Design<br>Portfolio<span>.</span></h1><p>林子文的设计作品集</p></div>
+</div>
+<div class="drift-foot"><div><em>Selected works</em> <span>/ 2026</span></div><small>拖动浏览 · 点击图片展开</small><button id="motion" type="button" aria-pressed="false"><i class="pause" aria-hidden="true"></i><span>暂停动效</span></button></div>
+</section>
+<section id="workSection" class="archive">
+<div class="archive-title"><h2>作品索引</h2><span lang="en">Project index</span></div>
+<div class="archive-toolbar"><div id="filters" aria-label="作品分类"></div><span id="count" aria-live="polite"></span></div>
+<div id="cards"></div>
+</section>
+<section class="resume" id="aboutSection" aria-labelledby="aboutName">
+  <div class="resume-head">
+    <div><p class="resume-section-name">关于我 <em lang="en">About</em></p><h2 id="aboutName">林子文 <span lang="en">Ziwen Lin</span></h2></div>
+    <div class="education"><p>清华大学美术学院艺术与科技（展示设计）本科，2027 届</p><p>GPA 4.0/4.0，专业排名 1/15</p><p>国家奖学金、两次综合优秀奖学金</p></div>
+  </div>
+  <div class="resume-row"><h3>个人优势</h3><p>关注用户如何在数字界面与实体空间中理解信息、作出选择和参与体验。能够从调研和内容分析出发，建立信息架构与用户流程，并运用视觉设计、三维建模、交互原型及 AIGC 工具将方案具体化。项目经验涵盖移动端产品、展览空间、IP 视觉和空间计算交互。</p></div>
+  <div class="resume-row"><h3>相关实习</h3><div class="entries">
+    <article><div class="entry-head"><h4>北京恒泰氢安科技有限责任公司</h4><time>2026.05—2026.08</time></div><p class="role">产品设计、UI 设计</p><p>结合氢能源产品的功能与使用场景，参与产品外观及配套 App 界面设计；使用 AI 工具辅助探索实体产品与数字界面的视觉方案。</p></article>
+    <article><div class="entry-head"><h4>清华青岛艺术与科学创新研究院</h4><time>2025.08—2025.10</time></div><p class="role">AIGC 设计</p><p>参与鲁晓波教授团队「蛮猫」IP 项目，负责 AIGC 辅助视觉生成、形象延展及展厅空间设计；对比多轮生成方案，调整角色造型、视觉风格与形象一致性。项目成果在湖南株洲美术馆落地。</p></article>
+    <article><div class="entry-head"><h4>大连山上美术馆</h4><time>2024.07—2024.09</time></div><p class="role">视觉设计</p><p>参与展览脚本规划、平面视觉及现场空间布置，学习将展览内容转化为观众可阅读、可感知的视觉与空间呈现。</p></article>
+  </div></div>
+  <div class="resume-row"><h3>代表项目</h3><div class="entries">
+    <article><h4><a href="#project/glowher">GlowHer</a></h4><p class="role">年轻女性运动空间探索 App ｜ 设计组长</p><p>基于团队对 265 名高中生和大学生的调研，梳理运动场地限制、选择困难与心理顾虑等问题，提出以“找到适合自己的运动地点”为核心的产品方向。规划地点与路线发现、情境筛选、近期体验评价和个人运动记录等功能；将设施事实与个人感受分开展示，并考虑未成年用户的位置与轨迹隐私。完成产品架构、关键页面及视觉体验设计。</p></article>
+    <article><h4><a href="#project/coordinates">工业设计坐标</a></h4><p class="role">空间与移动端数字体验设计</p><p>针对工业展品数量多、尺度差异大、相互关系难以理解的问题，将内容组织为六个“工业设计坐标”，以尺度变化串联观展路径。完成背景调研、内容架构、空间规划、移动端交互及视觉系统设计，引导观众从认识单件展品，逐步理解展品与生活、产业之间的联系。</p></article>
+    <article><h4><a href="#project/poetry">诗窗</a></h4><p class="role">Vision Pro 空间交互体验</p><p>以古诗意境为内容基础，结合空间音效、环境意象与虚实交互，设计轻量的探索体验，尝试将文字中的情绪转化为可感知、可参与的空间场景。</p></article>
+    <article><h4>AI 图像表达适配研究</h4><p class="role">项目负责人</p><p>主持清华大学大学生学术研究推进计划 A 类项目，针对 ChatGPT、豆包、Kimi 设计跨平台对照实验与生成评价方案，分析不同语言表达和输入方式对语义理解、指令遵循及视觉结果的影响，关注创作意图能否在生成图像中得到准确呈现。</p></article>
+    <article><h4>沅陵张一尊故居改造</h4><p class="role">设计负责人</p><p>从地方艺史材料中提取文化元素，参与展厅空间及 AI 历史互动展项设计，将文化研究转化为观众可以接触的视觉与交互内容；项目方案已进入施工阶段。</p></article>
+  </div></div>
+  <div class="resume-row"><h3>在校经历</h3><p>担任清华大学美39班班长、美术学院 TMS 理论部部长；组织五系联合“求索杯”等活动。累计参与、组织7支社会实践队伍，其中4支担任支队长，具有团队分工、跨团队沟通与项目推进经验。</p></div>
+  <div class="resume-row"><h3>技能</h3><dl class="resume-skills"><dt>用户体验与视觉</dt><dd>Figma、Photoshop、Illustrator</dd><dt>三维与交互</dt><dd>SketchUp、Blender、Unity、TouchDesigner、Twinmotion、Arduino</dd><dt>AI</dt><dd>可灵、Seedance、ChatGPT、Gemini、kimi、deepseek</dd><dt>语言</dt><dd>CET-6</dd></dl></div>
+  <a class="text-link" href="#home">回到封面</a>
+</section>
+
+</main>
+<main id="casePage" hidden></main>
+<footer><span>林子文 <i>/</i> Ziwen Lin</span><span>Design Portfolio · 2026</span></footer>
+<dialog id="spotlight" aria-labelledby="spotName"><div class="spot-shell"><div class="spot-head"><div><span id="spotGroup"></span><h2 id="spotName"></h2></div><button type="button" id="spotClose" aria-label="关闭预览">×</button></div><img id="spotImage" alt=""><div class="spot-foot"><button id="spotBack" type="button">返回画廊</button><a id="spotOpen">查看完整项目</a></div></div></dialog>
+<dialog id="viewer" aria-label="作品大图"><div class="viewer-controls"><span id="viewerTitle"></span><button id="zoom" type="button">查看细节</button><button id="closeViewer" type="button">关闭</button></div><div class="viewer-body"><img id="largeImg" alt=""></div></dialog>
+</body></html>
