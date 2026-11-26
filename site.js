@@ -2,7 +2,12 @@ const byId = id => document.getElementById(id);
 const siteTitle = '林子文 · Design Portfolio';
 const byGroup = key => groups.find(group => group[0] === key);
 const byWork = id => works.find(work => work.id === id);
-const imgPath = name => 'media/' + name;
+const videoFolders = {
+  'poem.mp4': '02-诗窗视频',
+  'opera.mp4': '03-西厢记视频',
+  'symphony.mp4': '04-元境交响视频'
+};
+const imgPath = name => (videoFolders[name] || '01-图片与展板') + '/media/' + name;
 const routeTo = id => '#project/' + id;
 const mediaImg = (name, alt, lazy = true) => '<img src="'+imgPath(name)+'" alt="'+alt+'" '+(lazy?'loading="lazy" ':'')+'decoding="async">';
 const menu = byId('menu');
